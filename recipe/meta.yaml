@@ -1,12 +1,12 @@
 {% set provider= "OpenStack" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "8fd1ccf71b25894ac878e969c31ad46288620ccf2cdcb6ef512611c8e90ee840" %}
-{% set sha256_win32 = "0c345fdc5c2710226c9d472cfd8ce342337fc7c079f52da651957800bf3f87fe" %}
-{% set sha256_win64 = "51248da10f41a28069cfc905857bc0ff16841015bcf40f771606de83ded3770a" %}
+{% set sha256 = "0f23b3155868ccf7187d31d7ae8cf3e6272d5ebe12318101f2fc4573ae1b6fb0" %}
+{% set sha256_win32 = "175ad292c9ff89a3ea9488095564c7d91bd7f3e4ee0293843392961a57f0bb7c" %}
+{% set sha256_win64 = "b526ccaf9b755c686f28744e3d958f0e480b8a0b40b2957988d15551c3b7fca1" %}
 
 package:
   name: {{ name|lower }}
