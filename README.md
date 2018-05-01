@@ -14,14 +14,16 @@ Summary: The Terraform OpenStack provider
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/terraform-provider-openstack-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/terraform-provider-openstack-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/terraform-provider-openstack-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/terraform-provider-openstack-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/terraform-provider-openstack-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/terraform-provider-openstack-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/terraform-provider-openstack-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/terraform-provider-openstack-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/terraform-provider-openstack-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/terraform-provider-openstack-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/terraform-provider-openstack-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/terraform-provider-openstack-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/terraform-provider-openstack/badges/version.svg)](https://anaconda.org/conda-forge/terraform-provider-openstack)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/terraform-provider-openstack/badges/downloads.svg)](https://anaconda.org/conda-forge/terraform-provider-openstack)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-terraform--provider--openstack-green.svg)](https://anaconda.org/conda-forge/terraform-provider-openstack) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/terraform-provider-openstack.svg)](https://anaconda.org/conda-forge/terraform-provider-openstack) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/terraform-provider-openstack.svg)](https://anaconda.org/conda-forge/terraform-provider-openstack) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/terraform-provider-openstack.svg)](https://anaconda.org/conda-forge/terraform-provider-openstack) |
 
 Installing terraform-provider-openstack
 =======================================
