@@ -1,12 +1,11 @@
-{% set provider= "OpenStack" %}
-{% set version = "1.3.0" %}
+{% set provider = "OpenStack" %}
+{% set version = "1.4.0" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "0f23b3155868ccf7187d31d7ae8cf3e6272d5ebe12318101f2fc4573ae1b6fb0" %}
-{% set sha256_win32 = "175ad292c9ff89a3ea9488095564c7d91bd7f3e4ee0293843392961a57f0bb7c" %}
-{% set sha256_win64 = "b526ccaf9b755c686f28744e3d958f0e480b8a0b40b2957988d15551c3b7fca1" %}
+{% set sha256 = "373a071cc484cd0db0bece5c3703de9807bb14491865f95ffdf1e69c791499e8" %}
+{% set sha256_win64 = "0c596eeac689199c5bc15aedaae1c0fdb6a59191e56d6920d62963d3c43c0fff" %}
 
 package:
   name: {{ name|lower }}
@@ -17,10 +16,8 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz  # [not win]
   sha256: {{ sha256 }}  # [not win]
 
-  url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_386.zip  # [win32]
   url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
   fn: {{ name }}-{{ version }}.zip  # [win]
-  sha256: {{ sha256_win32 }}  # [win32]
   sha256: {{ sha256_win64 }}  # [win64]
 
 build:
@@ -30,7 +27,7 @@ build:
 
 requirements:
   build:
-    - go 1.8.*  # [not win]
+    - go 1.9.*  # [not win]
     - make  # [not win]
     - toolchain  # [not win]
   run:
@@ -46,7 +43,7 @@ about:
   license: MPL 2.0
   summary: The Terraform {{ provider }} provider
   doc_url: https://www.terraform.io/docs/providers/{{ provider|lower }}/index.html
-  dev_url: https://https://github.com/terraform-providers/{{ name }}
+  dev_url: https://github.com/terraform-providers/{{ name }}
 
 extra:
   recipe-maintainers:
