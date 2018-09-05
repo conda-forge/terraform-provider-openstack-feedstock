@@ -1,5 +1,5 @@
 {% set provider = "OpenStack" %}
-{% set version = "1.8.0" %}
+{% set version = "1.9.0" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
@@ -11,10 +11,10 @@ package:
 source:
   - folder: src/github.com/terraform-providers/{{ name|lower }}
     url: https://github.com/terraform-providers/{{ name }}/archive/v{{ version }}.tar.gz  # [not win]
-    sha256: e13df3ee83b85d1c0faa62eae02c57ff1e6e4463e9553a5f4a15df84d67a1312  # [not win]
+    sha256: fece6d7c6e197ad03d1d74db727b61f45f9dfe554323f5587893e81cbb20f271  # [not win]
 
     url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
-    sha256: d8a50c666d07ce57a1395d618eae733b26e1f3c323a8433689d033dce7933280  # [win64]
+    sha256: 12373ef39b857656ae232c6e15167401614cd8c04d8b336c17396a14067bb706  # [win64]
 
 build:
   number: 0
