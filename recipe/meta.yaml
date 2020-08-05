@@ -1,6 +1,6 @@
 {% set provider = "OpenStack" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "1.29.0" %}
+{% set version = "1.30.0" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: 9872a94d43445ff37e8f2ae65cc548d79c79438dc43d5ae5902da100073d5247
+  sha256: 8892f193184aa05ba1b44965bc3a3f8ca236ded842395006ea0c5c97d1f2faf2
 
 build:
   number: 0
